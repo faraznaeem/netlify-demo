@@ -15,3 +15,23 @@
 .container.mx-auto.text-center
     %img(src="./images/shame.jpeg" alt="Shame!")
     %br/
+
+
+%form{method: "POST", name: "contact", netlify: ""}
+    %p
+        %label
+        Your Name:
+        %input{name: "name", type: "text"}
+        %br
+    %p
+        %label
+        Your Email:
+        %input{name: "email", type: "email"}
+        %br
+    %p
+        %label
+        Message:
+        %textarea{name: "message"}
+        %br
+    %p
+        %button{type: "submit"} Send
